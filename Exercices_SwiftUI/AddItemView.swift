@@ -86,7 +86,7 @@ struct AddItemView: View {
                 }.pickerStyle(.palette)
             }
             Section {
-                Toggle("Item d'attaque ?", isOn: $attack)
+                Toggle("Item d'attaque ?", isOn: $attack.animation())
                 
                 if attack {
                     Stepper(
