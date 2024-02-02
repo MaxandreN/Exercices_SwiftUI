@@ -35,18 +35,20 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(inventory.loot) { item in
-                    HStack{
-                        VStack{
-                            HStack{
-                                Circle()
-                                    .fill(item.rarity.color)
-                                    .frame(width: 10)
-                                Text(item.name)
+                    NavigationLink(destination: LootDetailView(lootItem: item)) {
+                        HStack {
+                            VStack {
+                                HStack {
+                                    Circle()
+                                        .fill(item.rarity.color)
+                                        .frame(width: 10)
+                                    Text(item.name)
+                                }
+                                Text("Quantité : " + String(item.quantity))
                             }
-                            Text("Quantityé : " + String(item.quantity))
+                            Spacer()
+                            Text(item.type.rawValue)
                         }
-                        Spacer()
-                        Text(item.type.rawValue)
                     }
                 }
             }

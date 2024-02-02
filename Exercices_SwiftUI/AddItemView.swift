@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Rarity: CaseIterable {
+enum Rarity: String, CaseIterable {
     case common, uncommon, rare, epic, legendary, unique
 }
 
@@ -85,13 +85,18 @@ struct AddItemView: View {
                     }
                 }.pickerStyle(.palette)
             }
-            
             Section {
-               
-                Toggle("Item d'attaque ?", isOn: Binding<Bool>(
-                    get: { self.sendReadReceipts },
-                    set: { self.attackStrength = $0 ? 1 : 0 }
-                ))
+                Toggle("Item d'attaque ?", isOn: $attack)
+                
+                if attack {
+                    Stepper(
+                        value: $attackStrength,
+                        in: 1...100,
+                        step: 1
+                    ) {
+                        Text("Force d'attaque: \(attackStrength)")
+                    }
+                }
             }
            
             Button(action: {

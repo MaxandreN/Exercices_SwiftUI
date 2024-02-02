@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5671F0D02B6BD1B600BB62FF /* LootDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5671F0CF2B6BD1B600BB62FF /* LootDetailView.swift */; };
 		56AEFE1C2B4E8F66005921D4 /* Exercices_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEFE1B2B4E8F66005921D4 /* Exercices_SwiftUIApp.swift */; };
 		56AEFE1E2B4E8F66005921D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEFE1D2B4E8F66005921D4 /* ContentView.swift */; };
 		56AEFE202B4E8F67005921D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AEFE1F2B4E8F67005921D4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5671F0CF2B6BD1B600BB62FF /* LootDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootDetailView.swift; sourceTree = "<group>"; };
 		56AEFE182B4E8F66005921D4 /* Exercices_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercices_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AEFE1B2B4E8F66005921D4 /* Exercices_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercices_SwiftUIApp.swift; sourceTree = "<group>"; };
 		56AEFE1D2B4E8F66005921D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				56AEFE212B4E8F67005921D4 /* Preview Content */,
 				56AEFE472B4E9F89005921D4 /* LootItem.swift */,
 				56AEFE492B4EA14B005921D4 /* Game.swift */,
+				5671F0CF2B6BD1B600BB62FF /* LootDetailView.swift */,
 			);
 			path = Exercices_SwiftUI;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				56AEFE4A2B4EA14B005921D4 /* Game.swift in Sources */,
 				56AEFE462B4E9034005921D4 /* AddItemView.swift in Sources */,
 				56AEFE482B4E9F89005921D4 /* LootItem.swift in Sources */,
+				5671F0D02B6BD1B600BB62FF /* LootDetailView.swift in Sources */,
 				56AEFE1C2B4E8F66005921D4 /* Exercices_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

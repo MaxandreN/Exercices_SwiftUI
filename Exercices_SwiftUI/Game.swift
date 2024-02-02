@@ -20,11 +20,11 @@ struct Game: Identifiable, Hashable {
     static var emptyGame = Game(name: "", genre: .unset, coverName: nil)
 }
 
-// Hesitez pas mettre vos propres jeux dans la liste
 let availableGames = [
     Game(name: "Elden Ring", genre: .rpg, coverName: "Elden_Ring"),
     Game(name: "Skyrim", genre: .rpg, coverName: "Skyrim"),
     Game(name: "WoW", genre: .mmorpg, coverName: "wow"),
     Game(name: "CS:GO", genre: .fps, coverName: "CS-GO"),
-    Game(name: "Diablo IV", genre: .looter, coverName: "Diablo_IV")
+    Game(name: "Diablo IV", genre: .looter, coverName: "Diablo_IV"),
+    Game(name: "PUBG", genre: .fps, coverName: "PUBG"),
 ]
